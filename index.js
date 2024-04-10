@@ -1,18 +1,14 @@
-// import * as lib from './moment-js/moment-timezone-with-data.js';
+// function getCountryName() {
+//     return document.getElementById("countryName").value;
+// }
 
-function getCountryName() {
-    return document.getElementById("countryName").value;
-}
-
-function getCountryTime() {
-    const countryTime = document.getElementById("countryTime").value;
-    return countryTime;
-}
+// function getCountryTime() {
+//     const countryTime = document.getElementById("countryTime").value;
+//     return countryTime;
+// }
 
 function convertTime() {
-    // var moment = require('moment-timezone');
-    
-    var newYork    = lib.moment.tz("2014-06-01 12:00", "America/New_York");
+    var newYork    = moment.tz("2014-06-01 12:00", "America/New_York");
     var losAngeles = newYork.clone().tz("America/Los_Angeles");
     var london     = newYork.clone().tz("Europe/London");
 
