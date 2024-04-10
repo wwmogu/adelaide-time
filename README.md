@@ -15,3 +15,7 @@ Further development, visualize all available countries' time.
 [Difference between GMT and UTC](https://stackoverflow.com/questions/48942916/what-is-the-difference-between-utc-and-gmt#:~:text=There%20is%20no%20time%20difference%20between%20Coordinated%20Universal%20Time%20and%20Greenwich%20Mean%20Time.)
 GMT: A time zone.
 UTC: Not a time zone.
+
+## Final decision
+Thanks for moment, I don't need to invent the whell again
+[moment.js](https://momentjs.com/timezone/)
