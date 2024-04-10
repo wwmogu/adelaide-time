@@ -32,5 +32,11 @@ function cur2est() {
     console.log("Current Time: " + curTime.format('MMMM Do YYYY, h:mm:ss a'));
     console.log("EST Time: " + estTime.format('MMMM Do YYYY, h:mm:ss a'));
 
-    document.getElementById('usTimeDisplay').innerText = estTime.format('MMMM Do YYYY, h:mm:ss a')
+    document.getElementById('usTimeDisplay').innerText = estTime.format('MMMM Do YYYY, h:mm:ss a');
 }
+
+setInterval(function () {
+    document.getElementById('worldTimeDisplay-adelaide').innerText = moment().tz("Australia/Adelaide").format('MMMM Do YYYY, h:mm:ss a');
+    document.getElementById('worldTimeDisplay-new_york').innerText = moment().tz("America/New_York").format('MMMM Do YYYY, h:mm:ss a');
+
+}, 1000);
